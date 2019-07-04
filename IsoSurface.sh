@@ -1,4 +1,4 @@
-mayavi2 -d iso.vtk \
+mayavi2 -d input.vtk \
  -m Outline \
  -s "actor.property.color = (1,0,0)"  \
  -s "actor.property.opacity = 1.0"    \
@@ -13,4 +13,4 @@ mayavi2 -d iso.vtk \
  -s "module_manager.scalar_lut_manager.use_default_range = False" \
  -s "module_manager.scalar_lut_manager.data_range = [0.0,1.0]"    \
  -s "module_manager.scalar_lut_manager.lut_mode = 'jet'"          \
- -s "scene.save('testnew.png', size=(800,800))" \
+ -s "scene.save('out.png', size=(800,800))" \
