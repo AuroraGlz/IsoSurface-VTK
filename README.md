@@ -7,7 +7,7 @@ Read input.iso, get out.png
 
 input.iso =Structure=
 
-# vtk DataFile Version 2.0 
+#vtk DataFile Version 2.0 
 Density field
 ASCII
 DATASET STRUCTURED_GRID
