@@ -1,0 +1,16 @@
+mayavi2 -d iso.vtk \
+ -m Outline \
+ -s "actor.property.color = (1,0,0)"  \
+ -s "actor.property.opacity = 1.0"    \
+ -s "scene.background = (1,1,1)"      \
+ -s "scene.camera.azimuth(60)"        \
+ -s "scene.camera.elevation(20)"    \
+ -s "scene.camera.zoom(1.2)"          \
+ -s "scene.camera.parallel_projection = False" \
+ -m IsoSurface \
+ -s "contour.contours = [0.30]"                                      \
+ -s "actor.property.opacity = 0.9"                                \
+ -s "module_manager.scalar_lut_manager.use_default_range = False" \
+ -s "module_manager.scalar_lut_manager.data_range = [0.0,1.0]"    \
+ -s "module_manager.scalar_lut_manager.lut_mode = 'jet'"          \
+ -s "scene.save('testnew.png', size=(800,800))" \
